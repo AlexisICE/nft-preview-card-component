@@ -1,0 +1,305 @@
+/* Estilos de letras y colores */
+
+:root {
+    /* colores primary */
+    ---SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%); 
+
+    /* neutral */
+    --veryDarkBlueMain: hsl(217, 54%, 11%);    /* MAIN BG */
+    --veryDarkBlueCard:hsl(216, 50%, 16%); /* MAIN CARD */
+    --veryDarkBlueLine: hsl(215, 32%, 27%);  /* MAIN Line */
+    --white:hsl(0, 0%, 100%);
+
+    /* tipografia */
+    --outfit:'Outfit', sans-serif;
+}
+
+body{
+    background-color: var(--veryDarkBlueMain);
+    height: 50vh;
+    width: 50vw;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 700px;  
+    padding-top: 40px;
+}
+
+
+
+/* CARD CON FLEX */
+
+
+.card{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryDarkBlueCard);
+    border-radius: 10px;
+}
+
+.card-img img{
+        /* border: 1px solid green; */
+        width: 20vw;
+        padding-bottom: 3px;
+        padding-top: 20px;
+        border-radius: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+/* info con flex */
+
+.card-info{
+   
+}
+
+.card-info h2{
+    font-family: var(--outfit);
+    color: var(--white);
+    font-weight: 300;
+    padding-left:10px;
+}
+
+.card-info p{
+    font-family: var(--outfit);
+    color: var(--veryDarkBlueLine);
+    font-weight: 300;
+    padding-left:10px;
+}
+
+
+
+/* card price flex */
+.card-price{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.card-price-eth{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-price-days{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(---SoftBlue);
+}
+
+/* avatar */
+.card-avatar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    padding-right:30px;
+    padding-bottom: 20px;
+}
+
+.card-avatar img{
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.card-avatar  {
+    font-family: var(--outfit);
+    color: var(--white);
+}
+
+.p-white{
+    color: var(---SoftBlue);
+    font-size: 12px;
+}
+
+.p-black{
+    font-family: var(--outfit);
+    font-size: 12px;
+}
+
+hr {
+    width:91%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:blue;
+  }
+
+  .money{
+    color: var(--Cyan);
+    font-family: var(--outfit);
+    font-weight: 400;
+}
+
+
+
+
+
+
+/* movil */
+@media (max-width: 800px) and (min-width: 360px) {
+    /* global */
+
+body{
+    background-color: var(--veryDarkBlueMain);
+    height: 70vh;
+    width: 80vw;
+}
+
+main{
+    padding: 50px 30px;
+    height: 70vh;
+    width: 80vw;
+
+}
+
+
+/* main */
+.card{
+ 
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--veryDarkBlueCard);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width:70vw;
+}
+
+/* card flex */
+.card-img{
+  
+}
+.card-img img{
+    width: 70vw;
+    padding-bottom: 3px;
+    padding-top: 20px;
+   border-radius: 30px;
+}
+
+
+/* info con flex */
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card-info h2 {
+    font-family: var(--outfit);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.card-info p {
+    font-family: var(--outfit);
+    color: var(--veryDarkBlueLine);
+   padding-right: 10px;
+}
+
+/* card price flex */
+.card-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.money{
+    color: var(--Cyan);
+    font-family: var(--outfit);
+    font-weight: 400;
+}
+
+.card-price-eth{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-price-eth img{
+    height: 30px;
+}
+
+.card-price-days{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(---SoftBlue);
+}
+
+
+
+
+/* 
+avatar */
+
+.card-avatar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    padding-right:30px;
+}
+
+.card-avatar img{
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.card-avatar  {
+    font-family: var(--outfit);
+    color: var(--white);
+}
+
+.p-white{
+    color: var(---SoftBlue);
+    font-size: 12px;
+}
+
+.p-black{
+    font-family: var(--outfit);
+    font-size: 12px;
+}
+
+/* line */
+
+
+hr {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:blue;
+  }
+}
+
+
+
+
